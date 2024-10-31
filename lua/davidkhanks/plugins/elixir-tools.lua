@@ -8,7 +8,7 @@ return {
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 		elixir.setup({
-			nextls = { enable = true },
+			nextls = { enable = false },
 			elixirls = {
 				enable = true,
 				settings = elixirls.settings({
