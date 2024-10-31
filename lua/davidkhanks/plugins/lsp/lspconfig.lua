@@ -129,6 +129,7 @@ return {
 						"typescriptreact",
 						"javascriptreact",
 						"css",
+						"heex",
 						"sass",
 						"scss",
 						"less",
