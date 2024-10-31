@@ -5,6 +5,7 @@ return {
 	config = function()
 		local elixir = require("elixir")
 		local elixirls = require("elixir.elixirls")
+		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 		elixir.setup({
 			nextls = { enable = true },
@@ -23,6 +24,7 @@ return {
 			projectionist = {
 				enable = true,
 			},
+			capabilities = capabilities,
 		})
 	end,
 	dependencies = {
