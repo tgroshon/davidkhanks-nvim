@@ -16,9 +16,24 @@ return {
 					enableTestLenses = false,
 				}),
 				on_attach = function(client, bufnr)
-					vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>", { buffer = true, noremap = true })
-					vim.keymap.set("n", "<space>tp", ":ElixirToPipe<cr>", { buffer = true, noremap = true })
-					vim.keymap.set("v", "<space>em", ":ElixirExpandMacro<cr>", { buffer = true, noremap = true })
+					vim.keymap.set(
+						"n",
+						"<space>mfp",
+						":ElixirFromPipe<cr>",
+						{ desc = "Refactor elixir from pipe", buffer = true, noremap = true }
+					)
+					vim.keymap.set(
+						"n",
+						"<space>mtp",
+						":ElixirToPipe<cr>",
+						{ desc = "Refactor elixir to pipe", buffer = true, noremap = true }
+					)
+					vim.keymap.set(
+						"v",
+						"<space>mem",
+						":ElixirExpandMacro<cr>",
+						{ desc = "Refactor elixir expand macro", buffer = true, noremap = true }
+					)
 				end,
 			},
 			projectionist = {
