@@ -10,6 +10,7 @@ return {
 		elixir.setup({
 			nextls = { enable = false },
 			elixirls = {
+				cmd = "/opt/elixir-ls/language_server.sh",
 				enable = true,
 				settings = elixirls.settings({
 					dialyzerEnabled = false,
