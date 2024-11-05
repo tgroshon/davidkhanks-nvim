@@ -57,7 +57,7 @@ return {
 		keymap.set(
 			"n",
 			"<leader>bb",
-			"<cmd>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal<CR>",
+			"<cmd>Telescope buffers sort_mru=true sort_lastused=true<CR>",
 			{ desc = "See currently open buffers" }
 		)
 		keymap.set("n", "<leader>sp", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
