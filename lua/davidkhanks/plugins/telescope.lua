@@ -56,7 +56,7 @@ return {
 		)
 		keymap.set(
 			"n",
-			"<leader>fb",
+			"<leader>bb",
 			"<cmd>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal<CR>",
 			{ desc = "See currently open buffers" }
 		)
