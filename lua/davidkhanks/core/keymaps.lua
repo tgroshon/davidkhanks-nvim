@@ -53,6 +53,14 @@ vim.keymap.set("v", "<leader>pp", '"+p', { desc = "Paste from system clipboard" 
 vim.keymap.set("n", "<leader>d", '"_d', { desc = "Delete to system clipboard" })
 vim.keymap.set("v", "<leader>d", '"_d', { desc = "Delete to system clipboard" })
 
+-- Tabs
+vim.keymap.set("n", "<leader>tc", ":tabnew<CR>", { desc = "Create new tab" })
+vim.keymap.set("n", "<leader>td", ":tabc<CR>", { desc = "Delete tab" })
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>", { desc = "Next tab" })
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Previous tab" })
+vim.keymap.set("n", "<leader>tf", ":tabfirst<CR>", { desc = "First tab" })
+vim.keymap.set("n", "<leader>tl", ":tablast<CR>", { desc = "Last tab" })
+
 -- Kill Q because it sucks
 vim.keymap.set("n", "Q", "<nop>", { desc = "No Op" })
 
