@@ -18,19 +18,19 @@ return {
 				on_attach = function(client, bufnr)
 					vim.keymap.set(
 						"n",
-						"<space>mfp",
+						"<space>xfp",
 						":ElixirFromPipe<cr>",
 						{ desc = "Refactor elixir from pipe", buffer = true, noremap = true }
 					)
 					vim.keymap.set(
 						"n",
-						"<space>mtp",
+						"<space>xtp",
 						":ElixirToPipe<cr>",
 						{ desc = "Refactor elixir to pipe", buffer = true, noremap = true }
 					)
 					vim.keymap.set(
 						"v",
-						"<space>mem",
+						"<space>xem",
 						":ElixirExpandMacro<cr>",
 						{ desc = "Refactor elixir expand macro", buffer = true, noremap = true }
 					)

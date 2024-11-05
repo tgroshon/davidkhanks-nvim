@@ -45,6 +45,10 @@ vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 vim.keymap.set("v", "<leader>y", '"+y', { desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>Y", '"+y', { desc = "Yank to system clipboard" })
 
+-- Marks
+vim.keymap.set("n", "<leader>ml", ":marks", { desc = "List current marks" })
+vim.keymap.set("n", "<leader>md", ":delmarks!", { desc = "Delete marks in buffer" })
+
 -- Paste from system clipboard
 vim.keymap.set("n", "<leader>pp", '"+p', { desc = "Paste from system clipboard" })
 vim.keymap.set("v", "<leader>pp", '"+p', { desc = "Paste from system clipboard" })
