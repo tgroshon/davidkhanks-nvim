@@ -54,12 +54,16 @@ return {
 			"<cmd>Telescope current_buffer_fuzzy_find<CR>",
 			{ desc = "Fuzzy find in current buffer" }
 		)
+		keymap.set("x", "<leader>ss", '"zy<cmd>Telescope current_buffer_fuzzy_find<CR><C-r>z')
+
 		keymap.set(
 			"n",
 			"<leader>bb",
 			"<cmd>Telescope buffers sort_mru=true sort_lastused=true<CR>",
 			{ desc = "See currently open buffers" }
 		)
+
+		keymap.set("x", "<leader>sp", '"zy<Cmd>Telescope live_grep<CR><C-r>z')
 		keymap.set("n", "<leader>sp", "<cmd>Telescope live_grep<CR>", { desc = "Find string in cwd" })
 		keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<CR>", { desc = "Find string under cursor in cwd" })
 		keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<CR>", { desc = "Find todos" })
