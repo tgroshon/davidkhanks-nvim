@@ -68,8 +68,6 @@ vim.keymap.set("n", "<leader>tl", ":tablast<CR>", { desc = "Last tab" })
 -- Kill Q because it sucks
 vim.keymap.set("n", "Q", "<nop>", { desc = "No Op" })
 
--- Start a new tmux session
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>", { desc = "Start new tmux session" })
 -- vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 -- vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")

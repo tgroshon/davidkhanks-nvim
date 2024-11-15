@@ -108,14 +108,4 @@ and understand the code in a project. It is what allows for things like jumpt to
 ## Most important Plugins
 
 To me a lot of these are just nice-to-haves but the ones that I care about the most are telescope, which let's me do various types of searching,
-Nvim-tree, which I like to have to see where I am at in a project (netrw is trash in comparison IMO), and the LSP setup, and nvim-tmux-navigator.
-
-That allows for jumping between tmux panes and nvim windows seemless by leveraging <C-h>, <C-j>, <C-k>, and <C-l>. It's companion is installed
-as a tmux plugin and without it I would not be using NeoVim.
-
-Everything is is super nice and I don't want to live without them, but I could if I had to.
-
-## Tmux integration
-
-I would only recommend even using this config if you are going to do so with tmux. My tmux config is located here:
-https://gist.github.com/davidkhanks/3530f1bca29cf94119fc9dadb2fbf625
+Nvim-tree, which I like to have to see where I am at in a project (netrw is trash in comparison IMO), and the LSP setup.
