@@ -3,10 +3,18 @@ vim.g.mapleader = " "
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Window Commands
-vim.keymap.set("n", "<leader>wv", "<C-W>v", { desc = "Split window vertically" }) -- Split vertically
-vim.keymap.set("n", "<leader>wh", "<C-W>s", { desc = "Split window horizontally" }) -- Split horizontally
-vim.keymap.set("n", "<leader>we", "<C-W>=", { desc = "Make splits equal" }) -- Make windows equal size
-vim.keymap.set("n", "<leader>wd", "<C-W>q", { desc = "Close window" }) -- Close window
+vim.keymap.set("n", "<leader>wv", "<C-W>v", { desc = "Split window vertically" })
+vim.keymap.set("n", "<leader>ws", "<C-W>s", { desc = "Split window horizontally" })
+vim.keymap.set("n", "<leader>wh", "<C-W>h", { desc = "Move to window left" })
+vim.keymap.set("n", "<leader>wH", "<C-W>H", { desc = "Move window TO left" })
+vim.keymap.set("n", "<leader>wl", "<C-W>l", { desc = "Move to window right" })
+vim.keymap.set("n", "<leader>wL", "<C-W>L", { desc = "Move window TO right" })
+vim.keymap.set("n", "<leader>wj", "<C-W>j", { desc = "Move to window down" })
+vim.keymap.set("n", "<leader>wJ", "<C-W>J", { desc = "Move window TO down" })
+vim.keymap.set("n", "<leader>wk", "<C-W>k", { desc = "Move to window up" })
+vim.keymap.set("n", "<leader>wK", "<C-W>K", { desc = "Move window TO up" })
+vim.keymap.set("n", "<leader>w=", "<C-W>=", { desc = "Make splits equal" })
+vim.keymap.set("n", "<leader>wd", "<C-W>q", { desc = "Close window" })
 
 -- Numbers
 vim.keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- Increment number
