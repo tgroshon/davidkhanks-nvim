@@ -21,7 +21,9 @@ vim.keymap.set("n", "<leader>gs", ":Neogit<CR>", { desc = "Open neogit status bu
 -- Buffer commands
 vim.keymap.set("n", "<leader>bd", ":bp|sp|bn|bd<CR>", { desc = "Kill the current buffer" }) -- Kill the current buffer and switch the next one
 vim.keymap.set("n", "<leader>bD", ":w|%bd|e#<CR>", { desc = "Kill all other buffers" }) -- save this buffer then, kill all other buffers
-vim.keymap.set("n", "<leader>qq", ":w|%bd|e#<CR>:q!<CR>", { desc = "Kill all buffers and quit" }) -- save this buffer then kill all other buffers and force quit
+vim.keymap.set("n", "<leader>qs", ":w|%bd|e#<CR>:q!<CR>", { desc = "Save buffer and quit" }) -- save this buffer then kill all other buffers and force quit
+vim.keymap.set("n", "<leader>qq", ":%bd|e#<CR>:q!<CR>", { desc = "Quit; no save" }) -- kill all other buffers and force quit
+vim.keymap.set("n", "<leader>qQ", ":%bd!|e#<CR>:q!<CR>", { desc = "HARD Quit; no save" }) -- kill all other buffers and force quit
 
 -- File commands
 vim.keymap.set("n", "<leader>fs", ":write<CR>", { desc = "Save buffer" })
