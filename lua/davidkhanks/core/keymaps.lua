@@ -105,6 +105,13 @@ vim.keymap.set("n", "<leader><Tab>", function()
 	vim.cmd("edit #")
 end, { desc = "Jump to last buffer" })
 
+vim.keymap.set(
+	"n",
+	"<leader>jq",
+	":%!jq .<CR>",
+	{ noremap = true, silent = true, desc = "Prettify entire file using jq" }
+)
+
 -- telescope
 -- vim.keymap.set('n', '<leader>pf', "<cmd>Telescope find_files<CR>")
 -- vim.keymap.set('n', '<leader>sp', "<cmd>Telescope live_grep<CR>")
