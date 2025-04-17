@@ -108,18 +108,18 @@ return {
 					filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 				})
 			end,
-			-- ["pyright"] = function()
-			-- 	lspconfig["pyright"].setup({
-			-- 		capabilities = capabilities,
-			-- 		filetypes = { "python" },
-			-- 		settings = {
-			-- 			python = {
-			-- 				pythonPath = "/Users/davidhanks/.virtualenvs/MyEd/bin/python",
-			-- 				analysis = { "/Users/davidhanks/.virtualenvs/MyEd/lib/python3.13/site-packages" },
-			-- 			},
-			-- 		},
-			-- 	})
-			-- end,
+			["pyright"] = function()
+				lspconfig["pyright"].setup({
+					capabilities = capabilities,
+					filetypes = { "python" },
+					settings = {
+						-- python = {
+						-- 	pythonPath = "/Users/davidhanks/.virtualenvs/MyEd/bin/python",
+						-- 	analysis = { "/Users/davidhanks/.virtualenvs/MyEd/lib/python3.13/site-packages" },
+						-- },
+					},
+				})
+			end,
 			["emmet_ls"] = function()
 				-- configure emmet language server
 				lspconfig["emmet_ls"].setup({

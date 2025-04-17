@@ -22,7 +22,6 @@ return {
 				lua = { "stylua" },
 				-- Disable Black for the time being
 				-- python = { "isort", "black" },
-				python = { "isort" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
