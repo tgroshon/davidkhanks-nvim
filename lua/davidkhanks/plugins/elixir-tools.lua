@@ -11,7 +11,7 @@ return {
 			nextls = { enable = false },
 			elixirls = {
 				cmd = "/opt/elixir-ls/language_server.sh",
-				enable = true,
+				enable = false,
 				settings = elixirls.settings({
 					dialyzerEnabled = false,
 					enableTestLenses = false,
