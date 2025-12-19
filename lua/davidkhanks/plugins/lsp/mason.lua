@@ -35,6 +35,7 @@ return {
 				"lua_ls",
 				"prismals",
 				"pyright",
+				"ruby_lsp",
 				"svelte",
 				"tailwindcss",
 				"terraformls",

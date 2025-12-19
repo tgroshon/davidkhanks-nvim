@@ -86,6 +86,18 @@ return {
 					capabilities = capabilities,
 				})
 			end,
+			["ruby_lsp"] = function()
+				lspconfig["ruby_lsp"].setup({
+					capabilities = capabilities,
+					init_options = {
+						addonSettings = {
+							["Ruby LSP Rails"] = {
+								enablePendingMigrationsPrompt = false,
+							},
+						},
+					},
+				})
+			end,
 			["svelte"] = function()
 				-- configure svelte server
 				lspconfig["svelte"].setup({
