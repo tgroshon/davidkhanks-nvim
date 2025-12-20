@@ -28,6 +28,7 @@ return {
 		mason_lspconfig.setup({
 			-- list of servers for mason to install
 			ensure_installed = {
+				"clangd",
 				"cssls",
 				"emmet_ls",
 				"graphql",
@@ -45,6 +46,7 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
+				"clang-format", -- c/c++ formatter
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				-- "isort", -- python formatter
