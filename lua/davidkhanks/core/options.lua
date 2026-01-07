@@ -14,6 +14,9 @@ opt.autoindent = true -- copy indent from current line when starting new one
 -- Line wrap
 opt.wrap = false
 
+-- clipboard
+opt.clipboard = "unnamedplus" -- use system clipboard for yank/paste
+
 -- Do not use swap files for unsaved buffers
 opt.swapfile = false
 
