@@ -20,6 +20,18 @@ vim.keymap.set("n", "<leader>wd", "<C-W>q", { desc = "Close window" })
 vim.keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- Increment number
 vim.keymap.set("n", "<leader>-", "<C-x>", { desc = "Deccrement number" }) -- Deccrement number
 
+-- Disable both syntax and treesitter highlighting
+vim.keymap.set("n", "<leader>md", function()
+	vim.cmd("syntax off")
+	vim.cmd("TSBufDisable highlight")
+end, { desc = "Disable all highlighting" })
+
+-- Enable both syntax and treesitter highlighting
+vim.keymap.set("n", "<leader>me", function()
+	vim.cmd("syntax on")
+	vim.cmd("TSBufEnable highlight")
+end, { desc = "Enable all highlighting" })
+
 -- neogit
 vim.keymap.set("n", "<leader>gs", ":Neogit<CR>", { desc = "Open neogit status buffer" })
 
